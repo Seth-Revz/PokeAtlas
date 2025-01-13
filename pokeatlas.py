@@ -160,7 +160,14 @@ def export_mod_full(atlas: Atlas, icon_path: pathlib.Path):
     canvas.save(atlas_mod_dir / atlas.img_name)
 
     pathlib.Path(mod_dir / 'info.xml').write_text(
-        """<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<resource author="Me" description="Created with PokeAtlas" name="MyAtlas" version="1" weblink=""/>"""
+        dedent("""
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <resource author="Revz" description="Created with PokeAtlas" name="Revz Atlas" version="1" weblink="">
+                <overlays>
+                    <overlay path="data/sprites/atlas/"/>
+                </overlays>
+            </resource>
+        """.strip('\n'))
     )
 
     shutil.copy(icon_path, str(pathlib.Path(mod_dir / 'icon.png')))
@@ -232,7 +239,14 @@ def export_mod_modified(atlas: Atlas, icon_path: pathlib.Path):
     canvas.save(atlas_mod_dir / atlas.img_name)
 
     pathlib.Path(mod_dir / 'info.xml').write_text(
-        """<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<resource author="Me" description="Created with PokeAtlas" name="MyAtlas" version="1" weblink=""/>"""
+        dedent("""
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <resource author="Revz" description="Created with PokeAtlas" name="Revz Atlas" version="1" weblink="">
+                <overlays>
+                    <overlay path="data/sprites/atlas/"/>
+                </overlays>
+            </resource>
+        """.strip('\n'))
     )
 
     shutil.copy(icon_path, str(pathlib.Path(mod_dir / 'icon.png')))
