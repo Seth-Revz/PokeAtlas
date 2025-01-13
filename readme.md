@@ -10,7 +10,7 @@ PokeAtlas was created to save time updating the atlas file after each game updat
 
 ## Requirements  
 
-- [Python](https://www.python.org/downloads/)  
+- [Python](https://www.python.org/downloads/)  3.12.X max
 - [PySide6](https://pypi.org/project/PySide6/)  
 - [PyQtDarkTheme](https://pypi.org/project/pyqtdarktheme/)  
 - [Pillow](https://pypi.org/project/pillow/)  
