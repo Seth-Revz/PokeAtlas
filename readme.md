@@ -27,3 +27,5 @@ python pokeatlas.py
 ```
 
 Or download the latest [release](https://github.com/Seth-Revz/PokeAtlas/releases/latest) (Windows Only)
+
+Web version is also available now. [pokeatlas-web](https://github.com/Seth-Revz/pokeatlas-web)
